@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "166542390826",
+    "project_id": "dominos-app-ddf8e",
+    "storage_bucket": "dominos-app-ddf8e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:166542390826:android:3047e5b8ca8d40c2777553",
+        "android_client_info": {
+          "package_name": "com.tonon.dominosapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "166542390826-cmi6t1tdaqnb9j83pkvavm8k5qn5cq6v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAxLx1IxlweRJiTHd1JeUvMGmXs2DxrgKM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "166542390826-cmi6t1tdaqnb9j83pkvavm8k5qn5cq6v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

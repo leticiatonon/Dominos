@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp">
+
+
+        <ImageView
+            android:id="@+id/image_ingredient"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:src="@drawable/garlic" />
+
+        <TextView
+            android:id="@+id/text_ingredient"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Alho"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/text_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="R$2,00"
+            android:textAlignment="center"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/add_button"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:layout_marginStart="35dp"
+            android:background="@drawable/ic_add_circle"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

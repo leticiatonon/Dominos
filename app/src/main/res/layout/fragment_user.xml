@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.User">
+
+
+    <ImageButton
+        android:id="@+id/user_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/user"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gustavo Mendes"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/user_image" />
+
+
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/ic_placeholder"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/username" />
+
+    <TextView
+        android:id="@+id/pedido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Pedidos"
+        android:textSize="20dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@id/username" />
+
+    <ImageView
+        android:id="@+id/divider2"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:src="@drawable/divider"
+        app:layout_constraintTop_toBottomOf="@id/pedido"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"/>
+
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/card"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/divider2" />
+
+    <TextView
+        android:id="@+id/card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Cartões"
+        android:textSize="20dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@id/divider2" />
+
+    <ImageView
+        android:id="@+id/divider3"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:src="@drawable/divider"
+        app:layout_constraintTop_toBottomOf="@id/card"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"/>
+
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/home"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/divider3" />
+
+    <TextView
+        android:id="@+id/adress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Endereço de entrega"
+        android:textSize="20dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@id/divider3" />
+
+    <ImageView
+        android:id="@+id/divider4"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:src="@drawable/divider"
+        app:layout_constraintTop_toBottomOf="@id/adress"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"/>
+
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/ic_logout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/divider4" />
+
+    <TextView
+        android:id="@+id/logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Sair"
+        android:textSize="20dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toEndOf="@+id/imageView5"
+        app:layout_constraintTop_toBottomOf="@id/divider4" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

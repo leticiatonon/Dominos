@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailFood">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/detail_food_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/pepperock"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/detail_food_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pepperock"
+            android:layout_marginStart="20dp"
+            android:textSize="30sp"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@+id/detail_food_image"/>
+
+        <TextView
+            android:id="@+id/detail_food_description"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:text="Mussarela, pepperoni, azeitona preta, parmesão ralado, oregano, Cream Cheese e alho granulado."
+            app:layout_constraintTop_toBottomOf="@id/detail_food_name"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"/>
+
+        <RadioGroup
+            android:id="@+id/rgType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginVertical="20dp"
+            android:background="@drawable/radio_group_tab_background"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/detail_food_description">
+
+            <RadioButton
+                android:id="@+id/rbFina"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_weight="0.50"
+                android:background="@drawable/units_tab_selector"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:text="Fina"
+                android:textColor="@drawable/units_tab_text_color_selector"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/rbPan"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_weight="0.50"
+                android:background="@drawable/units_tab_selector"
+                android:button="@null"
+                android:checked="false"
+                android:gravity="center"
+                android:text="Pan"
+                android:textColor="@drawable/units_tab_text_color_selector"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </RadioGroup>
+
+
+        <RadioGroup
+            android:id="@+id/rgSize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="20dp"
+            android:background="@drawable/radio_group_tab_background"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/rgType">
+
+            <RadioButton
+                android:id="@+id/rbBrotinho"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_weight="0.50"
+                android:background="@drawable/units_tab_selector"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:text="Brotinho"
+                android:textColor="@drawable/units_tab_text_color_selector"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/rbMedia"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_weight="0.50"
+                android:background="@drawable/units_tab_selector"
+                android:button="@null"
+                android:checked="false"
+                android:gravity="center"
+                android:text="Média"
+                android:textColor="@drawable/units_tab_text_color_selector"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/rbGrande"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_weight="0.50"
+                android:background="@drawable/units_tab_selector"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:text="Grande"
+                android:textColor="@drawable/units_tab_text_color_selector"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/rbGiga"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_weight="0.50"
+                android:background="@drawable/units_tab_selector"
+                android:button="@null"
+                android:checked="false"
+                android:gravity="center"
+                android:text="Giga"
+                android:textColor="@drawable/units_tab_text_color_selector"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/ingrediente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Acrescentar ingredientes:"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/rgSize"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycleView_ingredients"
+            android:layout_width="match_parent"
+            android:layout_height="155dp"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ingrediente"
+            tools:listitem="@layout/item_ingredients">
+
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+
+        <Button
+            android:id="@+id/button_buy"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/button_red"
+            android:text="Adicionar"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/recycleView_ingredients" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="R$57,90"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/button_buy"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/recycleView_ingredients" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    </ScrollView>
+
